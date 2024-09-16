@@ -2,7 +2,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-import java.io.FileWriter;
+
 import java.io.IOException;
 
 public class apiClient {
@@ -22,12 +22,6 @@ public class apiClient {
             // Print response body (JSON)
             assert response.body() != null;
             System.out.println(response.body().string());
-        }
-
-        try(FileWriter file = new FileWriter("response.json")){
-
-
-
         }
     }
 }
