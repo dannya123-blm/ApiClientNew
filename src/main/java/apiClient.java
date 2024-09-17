@@ -64,9 +64,9 @@ public class apiClient {
         );
 
         request = new Request.Builder()
-                .url("https://bean.com/api/endpoint") // Replace with your API endpoint
+                .url("https://bean.com/api/endpoint")
                 .post(requestBody)
-                .addHeader("Authorization", "https://jsonplaceholder.typicode.com/posts") // Replace with your API key
+                .addHeader("Authorization", "https://jsonplaceholder.typicode.com/posts")
                 .build();
 
         // Send the request and handle the response
