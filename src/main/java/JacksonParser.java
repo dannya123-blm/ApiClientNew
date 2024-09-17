@@ -22,7 +22,7 @@ public class JacksonParser {
 
             // Print all post titles
             for (Post post : posts) {
-                System.out.println(post.getTitle());
+                System.out.println(post.getId());
             }
         } catch (Exception e) {
             e.printStackTrace();
