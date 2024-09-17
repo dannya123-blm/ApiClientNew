@@ -1,0 +1,1 @@
+Just trying to learn to manipute JSON Data with with Data Structures, Learning how to use Dependencies and Libraries, Learning how to use OkHttp with java and RestAPI, Learning Maven and a little bit of Spring Boot Frameworks, Learning how to parse JSON Data
