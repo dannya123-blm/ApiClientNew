@@ -69,10 +69,11 @@ public class apiClient {
                 .addHeader("Authorization", "https://jsonplaceholder.typicode.com/posts")
                 .build();
 
-        // Send the request and handle the response
+        // Dynamically sends the status codes if successful or failed
         try (Response response = client.newCall(request).execute()) {
-            if (response.code() == 200) {
-                System.out.println("Success: " + response.message());
+            if (response.isSuccessful()) { //isSuccessful() is used when looking for status codes in the range of 200-299
+                System.out.println(response.body().string());
+                System.out.println("Success: " + response.code());
             } else {
                 System.out.println("Failed: " + response.code() + " " + response.message());
             }
